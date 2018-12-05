@@ -1,0 +1,56 @@
+.paley-nav{
+  padding: 1rem;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items:  center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+
+  .paley-logo{
+    max-width: 500px;
+  }
+
+  .paley-slogan{
+    display: none;
+    @media screen and (min-width: 750px){
+      display: block;
+      max-width: 180px;
+    }
+  }
+}
+
+.ui-tabs{
+  max-width: 650px;
+  margin: 0 auto;
+  border: 1px solid #333;
+}
+.ui-tabs__tabslist{
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  border-bottom: 1px solid #333;
+}
+
+.ui-tabs__tab{
+  width: 25%;
+  text-align: center;
+  padding: 1.5rem .5rem;
+  border-right: 1px solid #fff;
+
+  background: #03A9F4;
+  color: #fff;
+  &:last-child{
+    border: 0;
+  }
+
+.ui-tabs__tab li:hover {
+  background: peru;
+}
+
+  &.ui-tabs__tab--selected{
+    background: #E91E63;
+  }
+}
